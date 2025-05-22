@@ -4,7 +4,7 @@ A sleek, distraction-free **note-taking web app** with a modern MS Word–like U
 
 [🌐 Live Demo](https://luminote.netlify.app) | [📂 GitHub Repo](https://github.com/Lucky-Joshi/LumiNote)
 
-![LumiNote Preview](assets/preview-light.png)
+![LumiNote Preview](assets/preview.png)
 
 ---
 
@@ -56,9 +56,9 @@ A sleek, distraction-free **note-taking web app** with a modern MS Word–like U
 
 ## 🖼️ Preview
 
-| 💡 Light Mode | 🌙 Dark Mode |
+| 💡 Light Mode | 
 |--------------|--------------|
-| ![Light](assets/preview-light.png) | ![Dark](assets/preview-dark.png) |
+| ![Light](assets/preview.png) |
 
 ---
 
