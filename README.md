@@ -86,5 +86,4 @@ When users first load LumiNote, a **built-in note** appears that:
 
 For inquiries or licensing requests, please contact: [luckyjoshi524@gmail.com](mailto:luckyjoshi524@gmail.com)
 
-See the full license details in the [`LICENSE`](LICENSE.md) file.
-
+See the full license details in the [`LICENSE`](./LICENSE) file.
