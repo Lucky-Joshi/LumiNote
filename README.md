@@ -54,14 +54,6 @@ A sleek, distraction-free **note-taking web app** with a modern MS Word–like U
 
 ---
 
-## 🖼️ Preview
-
-| 💡 Light Mode | 
-|--------------|--------------|
-| ![Light](assets/preview.png) |
-
----
-
 ## 🛠️ Tech Stack
 
 - **HTML5**
