@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LumiNote - Notes Made Simple</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- jsPDF CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- Google Fonts: Inter (like MS Word) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    /* Scrollbar for notes container */
+    #notesContainer {
+      max-height: 60vh;
+      overflow-y: auto;
+    }
+    #notesContainer::-webkit-scrollbar {
+      width: 8px;
+    }
+    #notesContainer::-webkit-scrollbar-thumb {
+      background-color: rgba(100,100,100,0.3);
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition duration-300">
+
+  <header class="sticky top-0 bg-white dark:bg-gray-800 border-b border-gray-300 dark:border-gray-700 shadow-sm z-10">
+    <div class="max-w-4xl mx-auto flex items-center justify-between py-3 px-6">
+      <h1 class="text-3xl font-semibold select-none">📝 LumiNote</h1>
+      <button id="toggleMode" aria-label="Toggle Dark Mode" class="flex items-center space-x-2 px-3 py-1 rounded-md bg-indigo-600 hover:bg-indigo-700 transition text-white focus:outline-none">
+        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m8.485-8.485l-.707.707M4.222 4.222l-.707.707m16.97 11.314l-.707.707M4.222 19.778l-.707.707M21 12h-1M4 12H3" />
+          <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="currentColor" viewBox="0 0 24 24" stroke="none">
+          <path d="M21 12.79A9 9 0 0112.21 3c-.1 0-.19 0-.29.01a7 7 0 107.08 9.78z" />
+        </svg>
+        <span id="modeText" class="select-none">Dark Mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6">
+    <form id="noteForm" class="mb-6 space-y-3 bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+      <input id="noteTitle" type="text" placeholder="Note Title" class="w-full text-lg p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" required />
+      <textarea id="noteContent" placeholder="Write your note here..." class="w-full p-3 h-36 text-base border border-gray-300 rounded-md resize-y focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" required></textarea>
+      <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-md font-semibold transition focus:outline-none">Add Note</button>
+    </form>
+
+    <section id="notesContainer" class="grid gap-4"></section>
+  </main>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
