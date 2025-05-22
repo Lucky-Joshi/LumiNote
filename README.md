@@ -74,10 +74,16 @@ When users first load LumiNote, a **built-in note** appears that:
 
 ---
 
-## 📋 Installation
+## 🛡️ License
 
-To run the project locally:
+© 2025 **LuminAI** — All rights reserved.
 
-```bash
-git clone https://github.com/Lucky-Joshi/LumiNote.git
-cd LumiNote
+**LumiNote** is a proprietary product developed and owned by **LuminAI**, founded by [Lucky Joshi](https://github.com/Lucky-Joshi).
+
+- You **may use** this software for personal, non-commercial purposes.
+- You **may NOT** copy, modify, distribute, or sell this software or any part of it without explicit written permission from **LuminAI**.
+- Unauthorized use or distribution is strictly prohibited.
+
+For inquiries or licensing requests, please contact: [luckyjoshi524@gmail.com](mailto:luckyjoshi524@gmail.com)
+
+See the full license details in the [`LICENSE`](./LICENSE) file.
